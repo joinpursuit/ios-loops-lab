@@ -14,37 +14,61 @@
 
 Write code that prints all the numbers from 1 to 150, **inclusive.**
 
+for i in stride(from: 1, through: 150, by: 1) {
+    print(i)
+}
 ***
 ## Question 2
 
 Write code that prints all the numbers from 142 to 159, **exclusive.**
 
+for i in stride(from: 142, to: 159, by: 1) {
+    print(i)
+}
 ***
 ## Question 3
 
 Write code that prints only the even numbers from 15 to 80, **inclusive.**
 
+for i in stride(from: 16, through: 80, by: 2) {
+    print(i)
+}
 ***
 ## Question 4
 
 Write code that prints only the odd numbers from 19 to 51, **inclusive.**
 
+for i in stride(from: 19, through: 51, by: 2) {
+    print(i)
+}
 ***
 ## Question 5
 
 Write code that prints all the numbers that end in a **5** from 1 to 100, **exclusive.**
 
+for i in stride(from: 5, to: 100, by: 10) {
+    print(i)
+}
 ***
 ## Question 6
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
 
+for i in stride(from: 7, through: 40, by 10) {
+    print(i)
+}
 ***
 ## Question 7
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 3`
+
+for i in stride(from: 20, through: 150, by: 1) {
+    if i % 3 == 0 {
+        print(i)
+    }
+}
 
 ***
 ## Question 8
@@ -53,6 +77,11 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that are divisible by 2 and 3`
 
+for i in stride(from: 20, through: 150, by: 1) {
+    if i % 6 == 0 {
+        print(i)
+    }
+}
 ***
 ## Question 9
 
@@ -60,12 +89,25 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that end with a 4`
 
+for i in stride(from: 20, through: 150, by: 1) {
+    if i % 10 == 4 {
+        print(i)
+    }
+}
+
 ***
 ## Question 10
 
 Given a range of numbers from 20 to 150, print out all the numbers that follows these conditions:
 
 `Print out numbers: 31, 35, 40 to 60.`
+
+print(31)
+print(35)
+for i in stride(from: 40, through: 60, by: 1) {
+   print(i)
+}
+
 
 ***
 ## Question 11
@@ -81,7 +123,7 @@ while (i > 3) {
 
 // Your explanation here
 ```
-
+forever because var i will always be greater than 3
 ***
 ## Question 12
 
@@ -94,7 +136,7 @@ while (i > 3) {
     i += 1
 }
 ```
-
+while i < 10
 ***
 ## Question 13
 
@@ -107,7 +149,7 @@ while (i > 3) {
     i += 1
 }
 ```
-
+while i < 1005
 ***
 ## Question 14
 
@@ -119,7 +161,15 @@ var i = 5
 while (i > 3) {
     i += 1
 }
-```
+// your code here
+```swift
+while i < 1005 {
+    if i % 2 == 0 {
+        print(i)
+}
+    i += 1
+}
+
 
 ***
 ## Question 15
@@ -142,7 +192,7 @@ repeat {
     i += 1
 } while i <= 10
 ```
-
+added a repeat and put the while statement on the bottom, same result
 # Bonus =)
 
 ***
