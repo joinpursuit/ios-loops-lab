@@ -14,20 +14,51 @@
 
 Write code that prints all the numbers from 1 to 150, **inclusive.**
 
+# answer
+
+```swift
+for i in 1...150 {
+    print(i)
+}
+
+```
+
 ***
 ## Question 2
 
 Write code that prints all the numbers from 142 to 159, **exclusive.**
 
+# answer
+
+```swift
+for i in 142..<160 {
+    print(i)
+}
+```
 ***
 ## Question 3
 
 Write code that prints only the even numbers from 15 to 80, **inclusive.**
 
+# answer
+
+```swift
+for i in 15...80 where i % 2 == 0 {
+    print(i)
+}
+```
 ***
 ## Question 4
 
 Write code that prints only the odd numbers from 19 to 51, **inclusive.**
+
+# answer
+
+```swift
+for i in 19...51 where i % 2 != 0 {
+    print(i)
+}
+```
 
 ***
 ## Question 5
