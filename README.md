@@ -287,6 +287,9 @@ repeat {
 
 What's the difference between `break` and `continue`?  Give an example that demonstrates their differences.
 
+# Answer
+## A continue statement will end the execution of the specified conditions of a loop statement but will continue the loop statement, a break will actually end the execution of a loop statement all together.
+
 ***
 ## Question 2
 
@@ -300,17 +303,17 @@ for i in 1...10 {
     print(i)
 }
 ```
-
-[]1
-[]2
-[]3
+# Answer
+[X]1
+[X]2
+[X]3
 []4
 []5
 []6
 []7
-[]8
-[]9
-[]10
+[X]8
+[X]9
+[X]10
 
 ***
 ## Question 3
