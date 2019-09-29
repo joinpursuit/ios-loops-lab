@@ -65,10 +65,26 @@ for i in 19...51 where i % 2 != 0 {
 
 Write code that prints all the numbers that end in a **5** from 1 to 100, **exclusive.**
 
+# answer 
+
+```swift
+for i in 1..<100 where i % 10 == 5 {
+    print(i)
+}
+```
+
 ***
 ## Question 6
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
+
+# answer
+
+```swift
+for i in 1..<100 where i % 10 == 5 {
+    print(i)
+}
+```
 
 ***
 ## Question 7
@@ -77,12 +93,28 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that are divisible by 3`
 
+# answer
+
+```swift
+for i in 20...150 where i % 3 == 0 {
+    print(i)
+}
+```
+
 ***
 ## Question 8
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 2 and 3`
+
+# answer
+
+```swift
+for i in 20...150 where (i % 3 == 0 && i % 2 == 0) {
+    print(i)
+}
+```
 
 ***
 ## Question 9
@@ -91,12 +123,27 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that end with a 4`
 
+# answer
+
+```swift
+for i in 20...150 where i % 10 == 4 {
+    print(i)
+}
+```
+
 ***
 ## Question 10
 
 Given a range of numbers from 20 to 150, print out all the numbers that follows these conditions:
 
 `Print out numbers: 31, 35, 40 to 60.`
+
+# answer 
+```swift
+for i in 20...150 where i == 31 || i == 35 || (i >= 40 && i <= 60) {
+    print(i)
+}
+```
 
 ***
 ## Question 11
