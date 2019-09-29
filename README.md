@@ -329,9 +329,9 @@ for i in 1...10 {
 }
 ```
 
-[]1
-[]2
-[]3
+[X]1
+[X]2
+[X]3
 []4
 []5
 []6
@@ -355,16 +355,48 @@ outerloop: for x in 1...3 {
     }
 }
 ```
+# Answer
+## This loop will print:
+
+x = 1 , y = 1
+x = 2 , y = 1
+x = 3 , y = 1
+
+It prints this way because once y == 2 in the inner loop it goes back to continuing to execute the outer loop
 
 ***
 ## Question 5
 
 Write code that prints out all the points in the area bounded by (0,0), (10,0), (0,10) and (10,10) **where** x and y are both integers.
 
+# Answer
+
+```swift
+
+for x in 1...10 {
+  for y in 1...10 {
+    print("(\(x),\(y))")
+    }
+}
+```
+
 ***
 ## Question 6
 
 Write code that prints out all the points in the area bounded by (0,0), (10,0), (0,10) and (10,10) **where** the difference of x and y is at least 5, and x and y are both integers.
+
+# Answer
+
+```swift
+
+for x in 1...10 {
+  for y in 1...10 {
+        if (y - x >= 5) || (x - y >= 5) {
+            print("(\(x),\(y))")
+        }
+    }
+}
+```
 
 ***
 ## Question 7
@@ -381,6 +413,17 @@ Output:
 9
 16
 25
+```
+# Answer
+```swift
+var N = 5
+
+var square = 1
+
+while square <= N {
+    print(square * square)
+    square = square + 1
+}
 ```
 
 ***
