@@ -1,3 +1,4 @@
+# Kelby Mittan
 # Loops Lab
 
 ## Instructions for lab submission
@@ -14,7 +15,7 @@
 
 Write code that prints all the numbers from 1 to 150, **inclusive.**
 
-# answer
+# Answer
 
 ```swift
 for i in 1...150 {
@@ -28,7 +29,7 @@ for i in 1...150 {
 
 Write code that prints all the numbers from 142 to 159, **exclusive.**
 
-# answer
+# Answer
 
 ```swift
 for i in 142..<160 {
@@ -40,7 +41,7 @@ for i in 142..<160 {
 
 Write code that prints only the even numbers from 15 to 80, **inclusive.**
 
-# answer
+# Answer
 
 ```swift
 for i in 15...80 where i % 2 == 0 {
@@ -52,7 +53,7 @@ for i in 15...80 where i % 2 == 0 {
 
 Write code that prints only the odd numbers from 19 to 51, **inclusive.**
 
-# answer
+# Answer
 
 ```swift
 for i in 19...51 where i % 2 != 0 {
@@ -65,7 +66,7 @@ for i in 19...51 where i % 2 != 0 {
 
 Write code that prints all the numbers that end in a **5** from 1 to 100, **exclusive.**
 
-# answer 
+# Answer 
 
 ```swift
 for i in 1..<100 where i % 10 == 5 {
@@ -78,7 +79,7 @@ for i in 1..<100 where i % 10 == 5 {
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
 
-# answer
+# Answer
 
 ```swift
 for i in 1..<100 where i % 10 == 5 {
@@ -93,7 +94,7 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that are divisible by 3`
 
-# answer
+# Answer
 
 ```swift
 for i in 20...150 where i % 3 == 0 {
@@ -108,7 +109,7 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that are divisible by 2 and 3`
 
-# answer
+# Answer
 
 ```swift
 for i in 20...150 where (i % 3 == 0 && i % 2 == 0) {
@@ -123,7 +124,7 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that end with a 4`
 
-# answer
+# Answer
 
 ```swift
 for i in 20...150 where i % 10 == 4 {
@@ -138,7 +139,7 @@ Given a range of numbers from 20 to 150, print out all the numbers that follows 
 
 `Print out numbers: 31, 35, 40 to 60.`
 
-# answer 
+# Answer 
 ```swift
 for i in 20...150 where i == 31 || i == 35 || (i >= 40 && i <= 60) {
     print(i)
@@ -156,9 +157,10 @@ var i = 5
 while (i > 3) {
     i += 1
 }
-
-// Your explanation here
 ```
+# Answer
+## This loop will run an infinite number of times because adding 1 to i = 5 then i = 6 and so on will always be greater than 3.
+
 
 ***
 ## Question 12
@@ -169,6 +171,14 @@ Change the code below to make the loop stop executing when i reaches 9.
 var i = 5
 
 while (i > 3) {
+    i += 1
+}
+```
+# Answer
+```swift
+var i = 5
+
+while (i > 3 && i <= 9) {
     i += 1
 }
 ```
@@ -185,6 +195,26 @@ while (i > 3) {
     i += 1
 }
 ```
+# Answer
+```swift
+var i = 5
+
+while (i > 3) {
+    i += 1
+    if i == 1005 {
+        break
+    }
+}
+```
+# or
+```swift
+var i = 5
+
+repeat {
+    i > 3
+    i += 1
+} while i < 1005
+```
 
 ***
 ## Question 14
@@ -196,6 +226,33 @@ var i = 5
 
 while (i > 3) {
     i += 1
+}
+```
+# Answer
+```swift
+var i = 5
+
+while (i > 3) {
+    i += 1
+    if i == 1005 {
+        break
+    }
+}
+if i % 2 == 0 {
+    print(i)
+}
+```
+# or
+
+```swift
+var i = 5
+
+repeat {
+    i > 3
+    i += 1
+} while i < 1005
+if i % 2 == 0 {
+    print(i)
 }
 ```
 
@@ -220,6 +277,8 @@ repeat {
     i += 1
 } while i <= 10
 ```
+# Answer
+##  Both loops will have the same output, but are different in how they process the code. The difference is that the the first loop is telling a program that "while" a condition is true to complete a following process. Whereas is the second loop the program is told to initialize a process until a condition is met.
 
 # Bonus =)
 
