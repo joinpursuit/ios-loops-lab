@@ -123,8 +123,7 @@ Given a range of numbers from 20 to 150, print out all the numbers that follows 
 
 `Print out numbers: 31, 35, 40 to 60.`
 
-```
-swift 
+```swift 
 print("These are the special numbers:")
 for number in 20...150 where number == 31 || number == 35 || number >= 40 && number <= 60{
     print("\(number)", terminator: ", ")
@@ -234,6 +233,23 @@ repeat {
 ## Question 1
 
 What's the difference between `break` and `continue`?  Give an example that demonstrates their differences.
+
+```
+//Answer: 
+
+The Break statment is used to exit a loop. 
+The continue statement tells a loop to stop what it is doing and to continue to the next value. 
+
+for cookie in 0..<5 {
+    if cookie < 4 {
+        continue
+    } else {
+        break
+    }
+}
+print("Ameni is happy")
+
+```
 
 ***
 ## Question 2
