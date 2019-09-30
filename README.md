@@ -70,13 +70,22 @@ print(num)
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 3`
-
+____________________________________
+Answer:
+ for num in 20...150 where num % 3 == 0 {
+ print(num)
+ }
 ***
 ## Question 8
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 2 and 3`
+___________________________________________
+Answer:
+for num in 20...150 where num % 3 == 0 && num % 2 == 0 {
+print(num)
+}
 
 ***
 ## Question 9
@@ -84,7 +93,10 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that end with a 4`
-
+______________________________
+for num in 20...150 where num % 10 == 4 {
+print(num)
+}
 ***
 ## Question 10
 
@@ -105,6 +117,10 @@ while (i > 3) {
 }
 
 // Your explanation here
+_________________________
+Answer:
+It will run indefinite since it is adding numbers (i += 1) in while loop.
+In terms for while loop to spot running we should decrementing numbers (i -=1).
 ```
 
 ***
@@ -118,6 +134,18 @@ var i = 5
 while (i > 3) {
     i += 1
 }
+____________________
+Answer:
+var i = 5
+
+while (i > 3) {
+    i += 1
+    if i == 9 {
+          break
+}
+}
+print(i) 
+// Output 9
 ```
 
 ***
@@ -131,6 +159,18 @@ var i = 5
 while (i > 3) {
     i += 1
 }
+__________________
+Answer:
+var i = 5
+
+while (i > 3) {
+    i += 1        // It runs 1000 times
+    if i == 1005 {
+          break
+}
+}
+print(i)
+// Output 1005
 ```
 
 ***
@@ -166,6 +206,22 @@ repeat {
     print("i = \(i)")
     i += 1
 } while i <= 10
+_______________________
+Answer:
+First example will print: 
+"i = 1"
+"i = 2"
+"i = 3"
+"i = 4"
+"i = 5"
+"i = 6"
+"i = 7"
+"i = 8"
+"i = 9"
+"i = 10"
+
+I don't know what second loop will print.
+
 ```
 
 # Bonus =)
