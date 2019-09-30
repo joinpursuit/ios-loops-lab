@@ -15,58 +15,142 @@
 Write code that prints all the numbers from 1 to 150, **inclusive.**
 
 ***
+```
+ANSWER
+```swift 
+
+for numb in 1...150 {
+    print(numb, terminator: " ")
+}
+```
 ## Question 2
 
 Write code that prints all the numbers from 142 to 159, **exclusive.**
 
 ***
+```
+ANSWER
+```swift
+for numb in 142..<159 {
+    print(numb, terminator: " ")
+}
+```
 ## Question 3
 
 Write code that prints only the even numbers from 15 to 80, **inclusive.**
-
+```
+ANSWER
+```swift
+for numb in 15...80 {
+    if numb % 2 == 0  {
+    print(numb, terminator: " ")
+}
+}
+```
 ***
+
 ## Question 4
 
 Write code that prints only the odd numbers from 19 to 51, **inclusive.**
 
 ***
+```
+ANSWER
+```swift
+for numb in 19...51 {
+    if numb % 2 != 0  {
+    print(numb, terminator: " ")
+
+}
+}
+```
 ## Question 5
 
 Write code that prints all the numbers that end in a **5** from 1 to 100, **exclusive.**
+```
+ANSWER
+```swift
 
+for numb in 1..<100 where numb % 10 == 5 {
+    print(numb, terminator: " ")
+}
+```
 ***
 ## Question 6
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
+```
+ANSWER
+```swift
 
+for numb in 1...40 where numb % 10 == 7 {
+    print(numb, terminator: " ")
+}
+```
 ***
 ## Question 7
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 3`
+```
+ANSWER
+```swift
 
+for numb in 20...150 where numb % 3 == 0 {
+    print(numb, terminator: " ")
+}
+```
 ***
 ## Question 8
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 2 and 3`
-
+```
+ANSWER
+```swift
+for numb in 20...150 where numb % 3 == 0 && numb % 2 == 0{
+    print(numb, terminator: " ")
+}
+```
 ***
 ## Question 9
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that end with a 4`
+```
+ANSWER
+```swift
 
+for numb in 20...150 where numb % 10 == 4 {
+    print(numb, terminator: " ")
+}
+```
 ***
 ## Question 10
 
 Given a range of numbers from 20 to 150, print out all the numbers that follows these conditions:
 
 `Print out numbers: 31, 35, 40 to 60.`
+```
+ANSWER
+```swift
 
+for numb in 20...150 {
+    switch numb {
+    case 31 :
+    print(numb, terminator: " ")
+    case 35 :
+        print(numb, terminator: " ")
+    case 40...60 :
+        print(numb, terminator: " ")
+    default :
+        print(" ")
+    }
+}
+```
 ***
 ## Question 11
 
