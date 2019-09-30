@@ -441,7 +441,7 @@ Output:
 ```
 # Answer
 ```swift
-var N = 4
+var N = 2
 
 for _ in 1...N {
     for _ in 1...N {
@@ -459,6 +459,17 @@ Output:
 ***
 ***
 ***
+```
+# Answer
+```swift
+var N = 3
+
+for _ in 1...N {
+    for _ in 1...N {
+        print("*", terminator: "")
+    }
+    print("")
+}
 ```
 
 Hint 1
