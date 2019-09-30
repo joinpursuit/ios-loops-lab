@@ -14,30 +14,90 @@
 
 Write code that prints all the numbers from 1 to 150, **inclusive.**
 
+```swift
+for number in 1...150 {
+    print(number)
+}
+
+```
+
 ***
 ## Question 2
 
 Write code that prints all the numbers from 142 to 159, **exclusive.**
+
+```swift
+
+for number in 142..<159 {
+    print(number)
+}
+
+```
+
+
+
+
 
 ***
 ## Question 3
 
 Write code that prints only the even numbers from 15 to 80, **inclusive.**
 
+```swift
+
+for number in 15...80 {
+    if number % 2 == 0 {
+    print(number)
+}
+}
+
+```
+
+
 ***
 ## Question 4
 
 Write code that prints only the odd numbers from 19 to 51, **inclusive.**
+
+```swift
+
+for number in 19...51 {
+    if number % 2 != 0 {
+    print(number)
+}
+}
+```
+
 
 ***
 ## Question 5
 
 Write code that prints all the numbers that end in a **5** from 1 to 100, **exclusive.**
 
+```swift
+
+for number in 1..<100 {
+    if number % 10 == 5 {
+    print(number)
+}
+}
+
+```
+
 ***
 ## Question 6
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
+
+```swift
+
+for number in 1...40 {
+    if number % 10 == 7 {
+    print(number)
+}
+}
+
+```
 
 ***
 ## Question 7
@@ -46,12 +106,27 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that are divisible by 3`
 
+```swift
+for number in 20...150 where number % 3 == 0 {
+    print(number)
+}
+
+```
+
 ***
 ## Question 8
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 2 and 3`
+
+```swift
+
+for number in 20...150 where number % 3 == 0 && number % 2 == 0 {
+    print(number)
+}
+
+```
 
 ***
 ## Question 9
@@ -60,6 +135,15 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that end with a 4`
 
+```swift
+
+for number in 20...150 where number % 10 == 4 {
+    print(number)
+}
+
+```
+
+
 ***
 ## Question 10
 
@@ -67,6 +151,14 @@ Given a range of numbers from 20 to 150, print out all the numbers that follows 
 
 `Print out numbers: 31, 35, 40 to 60.`
 
+```swift
+
+for number in 20...150 {
+if number == 31 || number == 35 || (number > 39 && number <= 60) {
+    print(number) }
+}
+
+```
 ***
 ## Question 11
 
@@ -79,7 +171,9 @@ while (i > 3) {
     i += 1
 }
 
-// Your explanation here
+// Answer:
+
+It will keep running infinitely. While adding increments of 1 to a number already more than 3, the while statement will never stop being applicable.
 ```
 
 ***
@@ -90,7 +184,9 @@ Change the code below to make the loop stop executing when i reaches 9.
 ```swift
 var i = 5
 
-while (i > 3) {
+// Answer:
+
+while (i < 9) {
     i += 1
 }
 ```
@@ -103,7 +199,7 @@ Change the code below to make the loop stop executing after it has run 1,000 tim
 ```swift
 var i = 5
 
-while (i > 3) {
+while (i < 1005) {
     i += 1
 }
 ```
@@ -118,6 +214,15 @@ var i = 5
 
 while (i > 3) {
     i += 1
+}
+
+Answer: 
+
+while (i < 1005) {
+    i += 1
+    if i % 2 == 0 {
+    print(i)
+    }
 }
 ```
 
@@ -142,7 +247,9 @@ repeat {
     i += 1
 } while i <= 10
 ```
+Answer:
 
+Loop One has correct syntax. After setting i to 1, it runs itself at increments of 1 until i becomes 10, printing the value in an interpolated message each time until the loop ends. Loop Two does not run. The increments do not work without first using while and repeat is unneccessary.
 # Bonus =)
 
 ***
@@ -150,6 +257,18 @@ repeat {
 
 What's the difference between `break` and `continue`?  Give an example that demonstrates their differences.
 
+Break stops the loop from running, continue skips to the next iteration of the loop.
+```swift
+
+for num in 1...50{
+    if num % 2 == 0 {
+        continue
+    } else if num == 50 {
+        break }
+       print(num)
+}
+
+```
 ***
 ## Question 2
 
