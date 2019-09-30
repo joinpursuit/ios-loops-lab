@@ -78,6 +78,14 @@ for numEndIn5 in 5..<100 {
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
 Answer:
+```
+for numEndIn7 in 1...40 {
+    if numEndIn7 % 10 == 7 {
+    print(numEndIn7)
+    }
+}
+
+```
 
 
 ***
@@ -87,12 +95,29 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that are divisible by 3`
 
+Answer:
+```
+for numDiv3 in 20...150 {
+    if numDiv3 % 3 == 0 {
+        print(numDiv3)
+    }
+}
+```
+
 ***
 ## Question 8
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 2 and 3`
+Answer:
+```
+for numDiv32 in 20...150 {
+    if numDiv32 % 3 == 0 && numDiv32 % 2 == 0  {
+        print(numDiv32)
+    }
+}
+```
 
 ***
 ## Question 9
@@ -101,12 +126,29 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that end with a 4`
 
+Answer:
+```
+for number in 20...150 {
+    if number % 10 == 4 {
+    print(number)
+    }
+}
+```
+
 ***
 ## Question 10
 
 Given a range of numbers from 20 to 150, print out all the numbers that follows these conditions:
 
 `Print out numbers: 31, 35, 40 to 60.`
+
+```
+for number in 20...150 {
+    if number == 31 || number == 35 || number == 40 || (number >= 40 && number <= 60) {
+    print(number)
+    }
+}
+```
 
 ***
 ## Question 11
@@ -123,6 +165,11 @@ while (i > 3) {
 // Your explanation here
 ```
 
+```
+Answer:
+It will be an infinite i+1= 1 will always be greater than 3 so there are no limitations.
+```
+
 ***
 ## Question 12
 
@@ -135,6 +182,17 @@ while (i > 3) {
     i += 1
 }
 ```
+Answer:
+```
+while (i > 3) {
+    i += 1
+    print(i)
+    if i == 9 {
+        break
+    }
+}
+```
+
 
 ***
 ## Question 13
