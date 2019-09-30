@@ -13,6 +13,7 @@
 ## Question 1
 
 Write code that prints all the numbers from 1 to 150, **inclusive.**
+
 for num in 1...150 {
 print(num)
 }
@@ -20,6 +21,7 @@ print(num)
 ## Question 2
 
 Write code that prints all the numbers from 142 to 159, **exclusive.**
+
 for num in 142..<159 {
 print(num)
 }
@@ -27,6 +29,7 @@ print(num)
 ## Question 3
 
 Write code that prints only the even numbers from 15 to 80, **inclusive.**
+
 for num in 15...80 {
 print(num)
 }
@@ -34,6 +37,7 @@ print(num)
 ## Question 4
 
 Write code that prints only the odd numbers from 19 to 51, **inclusive.**
+
 for num in 19...51 where num % 2 != 0 {
 print(num)
 }
@@ -49,6 +53,7 @@ print("\(number)" ends in 5)
 ## Question 6
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
+
 for number in 1...40 where number % 10 == 7 {
 print("\(number) ends in 7")
 }
