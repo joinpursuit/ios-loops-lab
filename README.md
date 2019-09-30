@@ -65,7 +65,7 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 `Numbers that are divisible by 3`
 
 for number in 20...150 where number % 10 == 3 {
-print("Numbers that are divisible by 3")
+print("\(number) that are divisible by 3")
 }
 
 ***
@@ -298,6 +298,11 @@ Input: `var N = 5`
 
 Output:
 ```swift
+
+var N = 5 
+var squareNumber = N * N 
+print(N)
+
 1
 4
 9
@@ -315,6 +320,14 @@ Input: `var N = 2`
 
 Output:
 ```swift
+
+var N = 2
+for _ in 1...N {
+    for _ in 1...N {
+        print("*", terminator: "")
+    }
+    print("")
+}
 **
 **
 ```
@@ -324,6 +337,14 @@ Input: `var N = 3`
 
 Output:
 ```swift
+
+var N = 3
+for _ in 1...N {
+    for _ in 1...N {
+        print("*", terminator: "")
+    }
+    print("")
+}
 ***
 ***
 ***
