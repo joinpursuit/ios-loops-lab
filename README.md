@@ -244,7 +244,11 @@ They will print out the same number because both loops end when they reach the n
 ## Question 1
 
 What's the difference between `break` and `continue`?  Give an example that demonstrates their differences.
+/*ANSWER
+Break - breaks loop and stops searching for other conditions
+Continue - continue onto the next value/condition
 
+*/
 ***
 ## Question 2
 
@@ -259,16 +263,16 @@ for i in 1...10 {
 }
 ```
 
-[]1
-[]2
-[]3
+[x]1
+[x]2
+[x]3
 []4
 []5
 []6
 []7
-[]8
-[]9
-[]10
+[x]8
+[x]9
+[x]10
 
 ***
 ## Question 3
@@ -284,9 +288,9 @@ for i in 1...10 {
 }
 ```
 
-[]1
-[]2
-[]3
+[x]1
+[x]2
+[x]3
 []4
 []5
 []6
@@ -310,11 +314,12 @@ outerloop: for x in 1...3 {
     }
 }
 ```
-
 ***
 ## Question 5
 
 Write code that prints out all the points in the area bounded by (0,0), (10,0), (0,10) and (10,10) **where** x and y are both integers.
+
+
 
 ***
 ## Question 6
