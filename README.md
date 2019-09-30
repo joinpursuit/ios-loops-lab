@@ -153,7 +153,7 @@ Given a range of numbers from 20 to 150, print out all the numbers that follows 
 
 ```swift
 
-for number in 2...150 {
+for number in 20...150 {
 if number == 31 || number == 35 || (number > 39 && number <= 60) {
     print(number) }
 }
@@ -257,6 +257,18 @@ Loop One has correct syntax. After setting i to 1, it runs itself at increments 
 
 What's the difference between `break` and `continue`?  Give an example that demonstrates their differences.
 
+Break stops the loop from running, continue skips to the next iteration of the loop.
+```swift
+
+for num in 1...50{
+    if num % 2 == 0 {
+        continue
+    } else if num == 50 {
+        break }
+       print(num)
+}
+
+```
 ***
 ## Question 2
 
