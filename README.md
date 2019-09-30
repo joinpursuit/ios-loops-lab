@@ -14,44 +14,77 @@
 
 Write code that prints all the numbers from 1 to 150, **inclusive.**
 
+
+
+        for num in 1...150 {
+        print(num)
+        }
+
 ***
 ## Question 2
 
 Write code that prints all the numbers from 142 to 159, **exclusive.**
+
+for num in 142..>159 {
+print(num)
+}
+
 
 ***
 ## Question 3
 
 Write code that prints only the even numbers from 15 to 80, **inclusive.**
 
+for number in 15...80 where number % 2 == 0 {
+print(number)
+}
+
 ***
 ## Question 4
 
 Write code that prints only the odd numbers from 19 to 51, **inclusive.**
+
+for number in 19...51 where number % 2 != 0 {
+print(number)
+}
 
 ***
 ## Question 5
 
 Write code that prints all the numbers that end in a **5** from 1 to 100, **exclusive.**
 
+for number in 1..>100 where number % 10 == 5{
+    print(number)
+}
+
+
 ***
 ## Question 6
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
 
+for number in 1...40 where number % 10 == 7{
+    print(number)
+}
 ***
 ## Question 7
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 3`
-
+for number in 1...40 where number % 3 == 0 {
+    print(number)
+}
 ***
 ## Question 8
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 2 and 3`
+
+for number in 20...150 where number % 3 == 0 && number % 2 == 0{
+    print(number)
+}
 
 ***
 ## Question 9
@@ -60,12 +93,32 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that end with a 4`
 
+for number in 20...150 where number % 10 == 4{
+    print(number)
+}
+
+
 ***
 ## Question 10
 
 Given a range of numbers from 20 to 150, print out all the numbers that follows these conditions:
 
 `Print out numbers: 31, 35, 40 to 60.`
+
+for numbers in 20...150{
+    switch numbers{
+    case 31: 
+        print("31") 
+        case 35:
+        print("35")
+        case 40...60:
+        print(num)
+        default:
+        print(" ")
+    }
+}
+
+
 
 ***
 ## Question 11
