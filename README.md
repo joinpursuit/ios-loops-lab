@@ -14,10 +14,27 @@
 
 Write code that prints all the numbers from 1 to 150, **inclusive.**
 
+```
+```
+Answer:
+```
+for num in 1...150{
+print(num)
+}
+```
+
+
 ***
 ## Question 2
 
 Write code that prints all the numbers from 142 to 159, **exclusive.**
+```
+```
+Answer:
+```
+
+
+```
 
 ***
 ## Question 3
