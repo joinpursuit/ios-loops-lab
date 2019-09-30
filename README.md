@@ -103,6 +103,17 @@ print(num)
 Given a range of numbers from 20 to 150, print out all the numbers that follows these conditions:
 
 `Print out numbers: 31, 35, 40 to 60.`
+___________________________________________
+Answer:
+for number in 20...150 {
+    if number == 31 {
+        print(number)
+    } else if number == 35 {
+        print(number)
+    } else if number >= 40 && number <= 60 {
+      print(number)
+}
+}
 
 ***
 ## Question 11
@@ -184,6 +195,21 @@ var i = 5
 while (i > 3) {
     i += 1
 }
+______________________
+Answer:
+var i = 5
+
+while (i > 3) {
+    i += 1
+    if i == 1005 {
+    break
+}
+}
+if i % 2 == 0 {
+print(i)
+}
+
+// Output doesn't print since number is 1005 is not even.
 ```
 
 ***
