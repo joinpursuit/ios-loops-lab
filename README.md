@@ -14,15 +14,29 @@
 
 Write code that prints all the numbers from 1 to 150, **inclusive.**
 
+for i in 0...10 {
+    print(i)
+}
+
+
 ***
+
 ## Question 2
 
 Write code that prints all the numbers from 142 to 159, **exclusive.**
 
+for num in 142..<159 {
+    print(num)
+}
 ***
+
 ## Question 3
 
 Write code that prints only the even numbers from 15 to 80, **inclusive.**
+
+for num in 15...80 where num % 2 == 0 {
+    print(num)
+}
 
 ***
 ## Question 4
@@ -30,11 +44,17 @@ Write code that prints only the even numbers from 15 to 80, **inclusive.**
 Write code that prints only the odd numbers from 19 to 51, **inclusive.**
 
 ***
+for num in 19..<15 where num % 2 == 1 {
+    print(num)
+}
 ## Question 5
 
 Write code that prints all the numbers that end in a **5** from 1 to 100, **exclusive.**
 
 ***
+for num in 5..<100 where num % 10 == 5 {
+    print(num)
+}
 ## Question 6
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
