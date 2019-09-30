@@ -165,7 +165,10 @@ while (i > 3) {
 
 // Your explanation here
 ```
-
+ANSWER
+```swift
+This loop is infinite. As long as i is greater than 3, the number will continue with increments of +1 . The integer 5 is assigned to i. There is nothing to break the loop.
+```
 ***
 ## Question 12
 
