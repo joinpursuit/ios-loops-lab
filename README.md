@@ -133,6 +133,9 @@ while (i > 3) {
 }
 
 // Your explanation here
+
+It appears to be an infinite loop. the program runs through and adds and assigns one more to i, as long as i is greater than three the loop will continue, so this is infinite.
+
 ```
 
 ***
@@ -145,7 +148,13 @@ var i = 5
 
 while (i > 3) {
     i += 1
+    print(i)
 }
+if num == 9{
+  break 
+    }
+}
+
 ```
 
 ***
