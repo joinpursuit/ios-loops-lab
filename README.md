@@ -14,30 +14,60 @@
 
 Write code that prints all the numbers from 1 to 150, **inclusive.**
 
+//  Answer:
+for num in 1...100  {
+    print(num)
+}
+
 ***
 ## Question 2
 
 Write code that prints all the numbers from 142 to 159, **exclusive.**
+
+//  Answer:
+for num in 142..<159    {
+    print(num)
+}
 
 ***
 ## Question 3
 
 Write code that prints only the even numbers from 15 to 80, **inclusive.**
 
+//  Answer:
+for num in 15...80 where num % 2 == 0   {
+    print(num)
+}
+
 ***
 ## Question 4
 
 Write code that prints only the odd numbers from 19 to 51, **inclusive.**
+
+//  Answer:
+for num in 19...51 where num % 2 == 1   {
+    print(num)
+}
 
 ***
 ## Question 5
 
 Write code that prints all the numbers that end in a **5** from 1 to 100, **exclusive.**
 
+//  Answer:
+for number in 1..<100 where number % 10 == 5  {
+    print("\(number) number ends in 5")
+}
+
 ***
 ## Question 6
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
+
+//  Answer:
+for number in 1...40 where number % 10 == 7  {
+    print("\(number) number ends in 7")
+}
 
 ***
 ## Question 7
@@ -46,12 +76,22 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that are divisible by 3`
 
+//  Answer:
+for num in 20...150 where num % 3 == 0  {
+    print(num)
+}
+
 ***
 ## Question 8
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 2 and 3`
+
+//  Answer:
+for num in 20...150 where num % 2 == 0 && num % 3 == 0  {
+    print(num)
+}
 
 ***
 ## Question 9
