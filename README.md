@@ -14,30 +14,63 @@
 
 Write code that prints all the numbers from 1 to 150, **inclusive.**
 
+for numbers in 1...150{
+print(numbers)
+}
 ***
 ## Question 2
 
 Write code that prints all the numbers from 142 to 159, **exclusive.**
 
+for numbers in 142..<159{
+print(numbers)
+}
 ***
 ## Question 3
 
 Write code that prints only the even numbers from 15 to 80, **inclusive.**
+
+for numbers in 15...80{
+    if numbers % 2 == 0{
+        print(numbers)
+}
+}
 
 ***
 ## Question 4
 
 Write code that prints only the odd numbers from 19 to 51, **inclusive.**
 
+for numbers in 19...51{
+    if numbers % 2 != 0{
+        print(numbers)
+}
+}
+
+
 ***
 ## Question 5
 
 Write code that prints all the numbers that end in a **5** from 1 to 100, **exclusive.**
 
+for numbers in 1..<100{
+    if numbers % 10 == 5{
+        print(numbers)
+}
+}
+
+
 ***
 ## Question 6
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
+
+for numbers in 1...40{
+    if numbers % 10 == 7{
+        print(numbers)
+}
+}
+
 
 ***
 ## Question 7
@@ -46,12 +79,23 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that are divisible by 3`
 
+for numbers in 20...150{
+    if numbers % 3 == 0{
+        print(numbers)
+}
+}
 ***
 ## Question 8
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 2 and 3`
+
+for numbers in 20...150{
+    if numbers % 2 == 0 && numbers % 3 == 0{
+    print(numbers)
+}
+}
 
 ***
 ## Question 9
@@ -60,12 +104,33 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that end with a 4`
 
+for numbers in 20...150{
+    if numbers % 10 == 4{
+        print(numbers)
+    }
+}
+
+
 ***
 ## Question 10
 
 Given a range of numbers from 20 to 150, print out all the numbers that follows these conditions:
 
 `Print out numbers: 31, 35, 40 to 60.`
+
+for numbers in 20...150{
+    if numbers == 31{
+        print(numbers)
+}
+    if numbers == 35{
+        print(numbers)
+}
+    if numbers >= 40{
+        if numbers <= 60{
+        print(numbers)
+}
+}
+}
 
 ***
 ## Question 11
@@ -81,11 +146,11 @@ while (i > 3) {
 
 // Your explanation here
 ```
-
+This loop will run until your xcode self destructs and crashes because there's no break or code that stops the incremental growth. There's infinite numbers that come after 3.
 ***
 ## Question 12
 
-Change the code below to make the loop stop executing when i reaches 9.
+Change the code below to make the loop stop executing when it reaches 9.
 
 ```swift
 var i = 5
@@ -94,6 +159,15 @@ while (i > 3) {
     i += 1
 }
 ```
+var i = 5
+
+while (i > 3) {
+    i += 1
+    if i == 9{
+    break
+    }
+    print(i)
+}
 
 ***
 ## Question 13
@@ -107,6 +181,14 @@ while (i > 3) {
     i += 1
 }
 ```
+var i = 5
+while (i > 3) {
+    print(i)
+    i += 1
+    if i == 1005 {
+        break
+    }
+}
 
 ***
 ## Question 14
@@ -120,6 +202,7 @@ while (i > 3) {
     i += 1
 }
 ```
+
 
 ***
 ## Question 15
@@ -150,6 +233,8 @@ repeat {
 
 What's the difference between `break` and `continue`?  Give an example that demonstrates their differences.
 
+a break will jump out the code once a condition is met, while a continue will just skip the data when a condition is met but won't jump out of a code.
+
 ***
 ## Question 2
 
@@ -164,16 +249,16 @@ for i in 1...10 {
 }
 ```
 
-[]1
-[]2
-[]3
+[Y]1
+[Y]2
+[Y]3
 []4
 []5
 []6
 []7
-[]8
-[]9
-[]10
+[Y]8
+[Y]9
+[Y]10
 
 ***
 ## Question 3
@@ -189,9 +274,9 @@ for i in 1...10 {
 }
 ```
 
-[]1
-[]2
-[]3
+[Y]1
+[Y]2
+[Y]3
 []4
 []5
 []6
@@ -215,6 +300,7 @@ outerloop: for x in 1...3 {
     }
 }
 ```
+
 
 ***
 ## Question 5
