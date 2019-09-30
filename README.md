@@ -82,7 +82,7 @@ Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive
 # Answer
 
 ```swift
-for i in 1..<100 where i % 10 == 5 {
+for i in 1..<100 where i % 10 == 7 {
     print(i)
 }
 ```
@@ -438,6 +438,17 @@ Output:
 ```swift
 **
 **
+```
+# Answer
+```swift
+var N = 4
+
+for _ in 1...N {
+    for _ in 1...N {
+        print("*", terminator: "")
+    }
+    print("")
+}
 ```
 
 Example 2:
