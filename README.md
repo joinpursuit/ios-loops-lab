@@ -13,31 +13,72 @@
 ## Question 1
 
 Write code that prints all the numbers from 1 to 150, **inclusive.**
+let clone = 1...150
+
+
+Answer:
+```
+for num in 1...150 {
+print(num)
+}
+```
 
 ***
 ## Question 2
 
 Write code that prints all the numbers from 142 to 159, **exclusive.**
 
+Answer:
+```
+for num in 142..<159 {
+    print(num)
+}
+```
 ***
 ## Question 3
 
 Write code that prints only the even numbers from 15 to 80, **inclusive.**
+Answer:
+```
+for evenNum in 15...80 {
+    if evenNum % 2 == 0 {
+        print(evenNum)
+    }
+}
+```
 
 ***
 ## Question 4
 
 Write code that prints only the odd numbers from 19 to 51, **inclusive.**
+Answer:
+```
+for oddNumber in 19...51 {
+    if oddNumber % 2 == 1 {
+        print(oddNumber)
+    }
+}
+```
 
 ***
 ## Question 5
 
 Write code that prints all the numbers that end in a **5** from 1 to 100, **exclusive.**
+Answer:
+```
+for numEndIn5 in 5..<100 {
+    if numEndIn5  % 5 == 0 && numEndIn5 % 10 != 0 {
+        print(numEndIn5)
+    }
+}
+```
 
 ***
 ## Question 6
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
+Answer:
+
 
 ***
 ## Question 7
