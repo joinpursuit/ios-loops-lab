@@ -100,12 +100,25 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that end with a 4`
 
+//  Answer:
+for number in 20...150 where number % 10 == 4  {
+    print("\(number) number ends in 4")
+}
+
 ***
 ## Question 10
 
 Given a range of numbers from 20 to 150, print out all the numbers that follows these conditions:
 
 `Print out numbers: 31, 35, 40 to 60.`
+
+// Answer:
+for number in 20...150  {
+    if number == 31 || number == 35 || number == 40 || number == 60  {
+        print(number)
+        continue
+    }
+}
 
 ***
 ## Question 11
@@ -119,7 +132,9 @@ while (i > 3) {
     i += 1
 }
 
-// Your explanation here
+// Answer:
+Infinitely, because i starts at 5 which makes the while condition true and always stays greater, doesn't decrement to be equal to or less than 3.
+
 ```
 
 ***
@@ -133,6 +148,14 @@ var i = 5
 while (i > 3) {
     i += 1
 }
+
+// Answer:
+var i = 5
+
+while (i < 9) {
+    i += 1
+}
+
 ```
 
 ***
@@ -146,6 +169,14 @@ var i = 5
 while (i > 3) {
     i += 1
 }
+
+//  Answser:
+var i = 5
+
+while (i > 3) {
+    i += 1
+}
+
 ```
 
 ***
