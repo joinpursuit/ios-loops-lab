@@ -63,6 +63,7 @@ print("\(number) ends in 7")
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 3`
+
 for number in 20...150 where number % 10 == 3 {
 print("Numbers that are divisible by 3")
 }
@@ -73,6 +74,7 @@ print("Numbers that are divisible by 3")
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 2 and 3`
+
 for number in 20...150 where number % 10 == 2 && number % 10 == 3 {
 print(number)
 }
@@ -83,6 +85,7 @@ print(number)
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that end with a 4`
+
 for num in 20...150  where num % 10 == 4 {
 print(num)
 }
@@ -93,6 +96,7 @@ print(num)
 Given a range of numbers from 20 to 150, print out all the numbers that follows these conditions:
 
 `Print out numbers: 31, 35, 40 to 60.`
+
 for num in 20...150 where num == 31 || num == 35 && || (num > 39 && num <= 60) {
 print(num) 
 }
@@ -167,6 +171,7 @@ while i <= 10 {
     print("i = \(i)")
     i += 1
 }
+
 i = 1,2,3,4,5,6,7,8,9,10
 
 //loop two
@@ -187,21 +192,20 @@ i was declared after print therefore it woudlnt compile
 ## Question 1
 
 What's the difference between `break` and `continue`?  Give an example that demonstrates their differences.
+
 break - this would stop the loop
-for num in 1...50 {
-    if num == 7 {
-    print("You found it, the secret was \(num)")
-    break // breaks at 7 and doesnt go all the way to 50
-    } else {
-    print("keep looking, you are at \(num)")
-    }
-}
 
 continue - this would continue the loop 
-var seconds = 30
-while seconds >= 0 {
-    print("Countdown \(seconds)...")
-    seconds -= 1 
+
+for sec in 1...10 {
+    if sec > 10 {
+        continue
+    } else if sec == 9 {
+        break
+    } else {
+        print(sec)
+    }
+}
 
 ***
 ## Question 2
