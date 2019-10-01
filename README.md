@@ -103,7 +103,7 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 ```
 Answer:
 ```
-for num in 20...150 where num % 10 == 3 {
+for num in 20...150 where num % 3 {
 print(num)
 }
 ```
@@ -115,6 +115,15 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that are divisible by 2 and 3`
 
+```
+```
+Answer:
+```
+for num in 20...150 where num % 2 == 0 && num % 3 == 0 {
+print(num)
+}
+```
+
 ***
 ## Question 9
 
@@ -122,12 +131,42 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that end with a 4`
 
+```
+```
+Answer:
+
+```
+for num in 20...150 where num % 10 == 4 {
+print(num)
+} if 
+
+```
 ***
 ## Question 10
 
 Given a range of numbers from 20 to 150, print out all the numbers that follows these conditions:
 
 `Print out numbers: 31, 35, 40 to 60.`
+
+```
+```
+Answer:
+
+```
+let num = 20...150
+for number in num {
+    switch number {
+    case 31 :
+        print(number)
+    case 35 :
+        print(number)
+    case  40...60 :
+        print(number)
+    default :
+        ""
+    }
+}
+```
 
 ***
 ## Question 11
@@ -141,7 +180,7 @@ while (i > 3) {
     i += 1
 }
 
-// Your explanation here
+// Answer: This code will run infinitely because 5 (the value of i in this instance) is greater than 3 and so long as the value of i is greater than 3 and keeps increasing by 1, the code will keep running forever. There is an infinite number of  integers that are greater than 3.
 ```
 
 ***
@@ -150,13 +189,26 @@ while (i > 3) {
 Change the code below to make the loop stop executing when i reaches 9.
 
 ```swift
+
 var i = 5
 
 while (i > 3) {
     i += 1
+
+```
+```
+```
+Answer:
+```
+}
+var i = 5
+
+while (i <= 9 && i > 3) {
+    i += 1
 }
 ```
-
+```
+```
 ***
 ## Question 13
 
@@ -168,6 +220,10 @@ var i = 5
 while (i > 3) {
     i += 1
 }
+```
+Answer:
+```
+
 ```
 
 ***
