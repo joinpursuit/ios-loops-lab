@@ -14,26 +14,67 @@
 
 Write code that prints all the numbers from 1 to 150, **inclusive.**
 
+```
+swift
+var i = 1
+while i <= 150 {
+    print(i)
+    i = i + 1
+}
+```
+
 ***
 ## Question 2
 
 Write code that prints all the numbers from 142 to 159, **exclusive.**
 
+```
+swift
+var i = 142
+while i <= 159 {
+    print(i)
+    i = i + 1
+}
+
+```
 ***
 ## Question 3
 
 Write code that prints only the even numbers from 15 to 80, **inclusive.**
 
+```swift
+for number in 15...100 {
+
+    if number % 2 == 0 && number < 81 {
+        print(number)
+    }
+}
+```
 ***
 ## Question 4
 
 Write code that prints only the odd numbers from 19 to 51, **inclusive.**
 
+```
+swift
+for i in 19...53 {
+if i % 2 == 1 {
+continue
+}
+print(i - 1)
+}
+```
 ***
 ## Question 5
 
 Write code that prints all the numbers that end in a **5** from 1 to 100, **exclusive.**
-
+```
+swift
+for i in 1...100 {
+if i % 5 == 0 && i % 10 != 0
+{print(i)}
+}
+```
 ***
 ## Question 6
 
@@ -46,13 +87,31 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that are divisible by 3`
 
+```
+swift
+for i in 20...150{
+if i % 3 == 0
+{
+print(i)
+
+}
+}
+```
 ***
 ## Question 8
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 2 and 3`
+```
+swift
+for i in 20...150{
+if i % 3 == 0 && i % 2 == 0
+{
+print(i)
 
+}
+}
 ***
 ## Question 9
 
