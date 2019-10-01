@@ -164,9 +164,12 @@ Change the code below to make the loop stop executing after it has run 1,000 tim
 
 ```swift
 var i = 5
-
-while (i > 3) {
-    i += 1
+while (i >= 3) {
+   i += 1
+   print(i)
+if i == 9{
+ break 
+   }
 }
 ```
 
@@ -177,9 +180,14 @@ Change the code below to make the loop stop executing after it has run 1,000 tim
 
 ```swift
 var i = 5
-
-while (i > 3) {
-    i += 1
+   while (i > 3) {
+      i += 1
+      if i % 2 == 0{
+      print(i)
+   if i == 1000{
+    break //exits the for loop
+      }
+}
 }
 ```
 
@@ -203,6 +211,12 @@ repeat {
     print("i = \(i)")
     i += 1
 } while i <= 10
+
+Loop 1: starts at the number one, it will continue until i reaches to the number ten,will print i for each interger, and  will add one to i and assign the new number to i
+
+Loop 2: 
+
+
 ```
 
 # Bonus =)
