@@ -59,6 +59,12 @@ for num in 5..<100 where num % 10 == 5 {
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
 
+for num in 1...40 {
+if num % 10 == 7 {
+    print(num)
+  }
+  }
+
 ***
 ## Question 7
 
@@ -67,6 +73,9 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 `Numbers that are divisible by 3`
 
 ***
+for num in 20...150 where num % 3 == 0 {
+    print(num)
+}
 ## Question 8
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
@@ -74,6 +83,9 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 `Numbers that are divisible by 2 and 3`
 
 ***
+for num in 20...150 where num % 3 & num % 2 == 0 {
+    print(num)
+}
 ## Question 9
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
@@ -81,6 +93,11 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 `Numbers that end with a 4`
 
 ***
+for num in 20...50 {
+if num % 10 == 4 {
+    print(num)
+  }
+  }
 ## Question 10
 
 Given a range of numbers from 20 to 150, print out all the numbers that follows these conditions:
@@ -88,6 +105,20 @@ Given a range of numbers from 20 to 150, print out all the numbers that follows 
 `Print out numbers: 31, 35, 40 to 60.`
 
 ***
+flet num = 20...150
+for number in num {
+    switch number {
+    case 40...60:
+        print(number)
+        fallthrough
+    case 31:
+        print(number)
+    case 35:
+        print(number)
+    default:
+        print( )
+    }
+}
 ## Question 11
 
 Without using Xcode, how many times will the loop below run?  Explain why.
@@ -101,7 +132,7 @@ while (i > 3) {
 
 // Your explanation here
 ```
-
+WHEN YOU PUT += 1 IT MEANS YOU ADD 1 TO ALL VARIABLE i WHICH IS INFINITE & over 3
 ***
 ## Question 12
 
@@ -115,6 +146,12 @@ while (i > 3) {
 }
 ```
 
+var i = 5
+while (i < 10) {
+    i += 1
+    print(i)
+    }
+    
 ***
 ## Question 13
 
@@ -128,6 +165,11 @@ while (i > 3) {
 }
 ```
 
+var i = 5
+while (i < 1005) {
+i += 1
+print(i)
+}
 ***
 ## Question 14
 
