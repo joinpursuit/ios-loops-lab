@@ -116,7 +116,6 @@ Given a range of numbers from 20 to 150, print out all the numbers that follows 
 for number in 20...150  {
     if number == 31 || number == 35 || number == 40 || number == 60  {
         print(number)
-        continue
     }
 }
 
@@ -173,7 +172,7 @@ while (i > 3) {
 //  Answser:
 var i = 5
 
-while (i > 3) {
+while (i < 1005) {
     i += 1
 }
 
@@ -190,6 +189,17 @@ var i = 5
 while (i > 3) {
     i += 1
 }
+
+//  Answser:
+var i = 5
+
+while (i < 1005) {
+    if i % 2 == 0   {
+        print(i)
+    }
+    i += 1
+}
+
 ```
 
 ***
@@ -212,6 +222,10 @@ repeat {
     print("i = \(i)")
     i += 1
 } while i <= 10
+
+//  Answer:
+While will check condition first and run if it's true, repeat will run the code first and check if condition is true at the end. Written as is both will print to 10 and stop the loop at 11.
+
 ```
 
 # Bonus =)
