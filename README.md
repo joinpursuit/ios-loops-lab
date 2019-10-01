@@ -266,7 +266,9 @@ repeat {
 ***
 ## Question 1
 
-What's the difference between `break` and `continue`?  Give an example that demonstrates their differences.
+What's the difference between `break` and `continue`?  Give an example that demonstrates their differences. 
+
+Continue tells the code to continue searching for all the values that fit your condition even after the value being searched for is found the first time . Break tells the code to stup runnoing once the value being searched for is found the first time.
 
 ***
 ## Question 2
