@@ -76,6 +76,11 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that are divisible by 3`
 
+for num in 20...150 {
+    if num % 3 == 0{
+    print(num)
+    }
+}
 ***
 ## Question 8
 
@@ -83,6 +88,11 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that are divisible by 2 and 3`
 
+for num in 20...150 {
+    if num % 3 == 0 && num % 2 == 0{
+    print(num)
+    }
+}
 ***
 ## Question 9
 
@@ -90,12 +100,35 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that end with a 4`
 
+for num in 20...150 {
+    if num % 10 == 4{
+    print(num)
+    }
+}
 ***
 ## Question 10
 
 Given a range of numbers from 20 to 150, print out all the numbers that follows these conditions:
 
 `Print out numbers: 31, 35, 40 to 60.`
+'''
+
+let num = 20...150
+for number in num {
+    switch number{
+    case 31:
+    print(number)
+    case 35:
+    print(number)
+    case 40...60:
+    print(number)
+    default:
+        break
+    
+}
+
+}
+
 
 ***
 ## Question 11
@@ -111,7 +144,7 @@ while (i > 3) {
 
 // Your explanation here
 ```
-
+it would run infinite because there is no statements to stop this loop 
 ***
 ## Question 12
 
