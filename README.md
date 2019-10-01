@@ -256,8 +256,42 @@ I don't know what second loop will print.
 ## Question 1
 
 What's the difference between `break` and `continue`?  Give an example that demonstrates their differences.
+___________________________________
+Answer:
+Break will exit the loop and stop running it. Continue will go to the next number using when met some condition and we want to skip this number and move to the another number.
 
-***
+Break example:
+for num in 1...10 {
+    if num == 4 {
+print("Happy birthday, Miles")
+break // exit loop or end loop, stop looping
+    } else {
+print("Not your birthday yet, you are only \(num) years old")
+}
+}
+
+// Output 
+Not your birthday yet, you are only 1 years old
+Not your birthday yet, you are only 2 years old
+Not your birthday yet, you are only 3 years old
+Happy birthday, Miles
+
+var number = 3
+while number < 40 {
+number += 4
+if number % 3 == 0 {
+continue
+}
+print(number)
+}
+// Output 
+7
+11
+19 // skips 15
+23
+31 // skips 27
+35
+43 // skips 39
 ## Question 2
 
 Without using Xcode, what will the loop below print? Select all that apply.
@@ -281,6 +315,14 @@ for i in 1...10 {
 []8
 []9
 []10
+___________________________
+Answer:
+1
+2
+3
+8
+9
+10
 
 ***
 ## Question 3
@@ -306,6 +348,12 @@ for i in 1...10 {
 []8
 []9
 []10
+_______________________
+Answer:
+1
+2
+3
+
 
 ***
 ## Question 4
@@ -322,16 +370,22 @@ outerloop: for x in 1...3 {
     }
 }
 ```
+________________________________________
+I don't know yet.
 
 ***
 ## Question 5
 
 Write code that prints out all the points in the area bounded by (0,0), (10,0), (0,10) and (10,10) **where** x and y are both integers.
+________________________________________
+I don't know yet.
 
 ***
 ## Question 6
 
 Write code that prints out all the points in the area bounded by (0,0), (10,0), (0,10) and (10,10) **where** the difference of x and y is at least 5, and x and y are both integers.
+________________________________________
+I don't know yet.
 
 ***
 ## Question 7
@@ -349,6 +403,8 @@ Output:
 16
 25
 ```
+________________________________________
+I don't know yet.
 
 ***
 ## Question 8
@@ -381,3 +437,5 @@ Hint 2
 You can use print("") to print an empty line.
 
 ***
+________________________________________
+I don't know yet.
