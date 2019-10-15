@@ -14,7 +14,7 @@
 
 Write code that prints all the numbers from 1 to 150, **inclusive.**
 
-for i in 0...10 {
+for i in 0...150 {
     print(i)
 }
 
@@ -166,8 +166,7 @@ while (i > 3) {
 ```
 
 var i = 5
-while (i < 1005) {
-i += 1
+for _ in 1...1000 {
 print(i)
 }
 ***
@@ -182,7 +181,10 @@ while (i > 3) {
     i += 1
 }
 ```
-
+var i = 5
+for _ in 1...1000 {
+print(i % 2 ==0 )
+}
 ***
 ## Question 15
 
@@ -204,7 +206,7 @@ repeat {
     i += 1
 } while i <= 10
 ```
-
+loop one is using a while loop and loop two is using a REPEAT WHILE loop. They will both run the same in this case because they are BOTH LOOPING within the code. 
 # Bonus =)
 
 ***
@@ -213,6 +215,8 @@ repeat {
 What's the difference between `break` and `continue`?  Give an example that demonstrates their differences.
 
 ***
+break stops the loop and gets out of the scope entirely and continue will just move on to the next case. 
+
 ## Question 2
 
 Without using Xcode, what will the loop below print? Select all that apply.
@@ -226,16 +230,16 @@ for i in 1...10 {
 }
 ```
 
-[]1
-[]2
-[]3
-[]4
-[]5
-[]6
-[]7
-[]8
-[]9
-[]10
+[]1 yes
+[]2 yes 
+[]3 yes
+[]4 no
+[]5 no 
+[]6 no
+[]7 no
+[]8 yes
+[]9 yes
+[]10 yes
 
 ***
 ## Question 3
@@ -250,17 +254,17 @@ for i in 1...10 {
     print(i)
 }
 ```
-
-[]1
-[]2
-[]3
-[]4
-[]5
-[]6
-[]7
-[]8
-[]9
-[]10
+the same as question 2 above
+[]1 yes
+[]2yes
+[]3yes
+[]4no
+[]5no
+[]6no
+[]7no
+[]8yes
+[]9yes
+[]10yes
 
 ***
 ## Question 4
