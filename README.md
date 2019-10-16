@@ -180,6 +180,8 @@ var i = 5
 while (i > 3) {
     i += 1
 }
+
+one on one with genesis or antonio for questions 12 - 15
 ```
 
 ***
