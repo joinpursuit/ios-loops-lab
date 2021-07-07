@@ -14,15 +14,29 @@
 
 Write code that prints all the numbers from 1 to 150, **inclusive.**
 
+for i in 0...150 {
+    print(i)
+}
+
+
 ***
+
 ## Question 2
 
 Write code that prints all the numbers from 142 to 159, **exclusive.**
 
+for num in 142..<159 {
+    print(num)
+}
 ***
+
 ## Question 3
 
 Write code that prints only the even numbers from 15 to 80, **inclusive.**
+
+for num in 15...80 where num % 2 == 0 {
+    print(num)
+}
 
 ***
 ## Question 4
@@ -30,14 +44,26 @@ Write code that prints only the even numbers from 15 to 80, **inclusive.**
 Write code that prints only the odd numbers from 19 to 51, **inclusive.**
 
 ***
+for num in 19..<15 where num % 2 == 1 {
+    print(num)
+}
 ## Question 5
 
 Write code that prints all the numbers that end in a **5** from 1 to 100, **exclusive.**
 
 ***
+for num in 5..<100 where num % 10 == 5 {
+    print(num)
+}
 ## Question 6
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
+
+for num in 1...40 {
+if num % 10 == 7 {
+    print(num)
+  }
+  }
 
 ***
 ## Question 7
@@ -47,6 +73,9 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 `Numbers that are divisible by 3`
 
 ***
+for num in 20...150 where num % 3 == 0 {
+    print(num)
+}
 ## Question 8
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
@@ -54,6 +83,9 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 `Numbers that are divisible by 2 and 3`
 
 ***
+for num in 20...150 where num % 3 & num % 2 == 0 {
+    print(num)
+}
 ## Question 9
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
@@ -61,6 +93,11 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 `Numbers that end with a 4`
 
 ***
+for num in 20...50 {
+if num % 10 == 4 {
+    print(num)
+  }
+  }
 ## Question 10
 
 Given a range of numbers from 20 to 150, print out all the numbers that follows these conditions:
@@ -68,6 +105,20 @@ Given a range of numbers from 20 to 150, print out all the numbers that follows 
 `Print out numbers: 31, 35, 40 to 60.`
 
 ***
+flet num = 20...150
+for number in num {
+    switch number {
+    case 40...60:
+        print(number)
+        fallthrough
+    case 31:
+        print(number)
+    case 35:
+        print(number)
+    default:
+        print( )
+    }
+}
 ## Question 11
 
 Without using Xcode, how many times will the loop below run?  Explain why.
@@ -81,7 +132,7 @@ while (i > 3) {
 
 // Your explanation here
 ```
-
+WHEN YOU PUT += 1 IT MEANS YOU ADD 1 TO ALL VARIABLE i WHICH IS INFINITE & over 3
 ***
 ## Question 12
 
@@ -95,6 +146,12 @@ while (i > 3) {
 }
 ```
 
+var i = 5
+while (i < 10) {
+    i += 1
+    print(i)
+    }
+    
 ***
 ## Question 13
 
@@ -108,6 +165,10 @@ while (i > 3) {
 }
 ```
 
+var i = 5
+for _ in 1...1000 {
+print(i)
+}
 ***
 ## Question 14
 
@@ -120,7 +181,10 @@ while (i > 3) {
     i += 1
 }
 ```
-
+var i = 5
+for _ in 1...1000 {
+print(i % 2 ==0 )
+}
 ***
 ## Question 15
 
@@ -142,7 +206,7 @@ repeat {
     i += 1
 } while i <= 10
 ```
-
+loop one is using a while loop and loop two is using a REPEAT WHILE loop. They will both run the same in this case because they are BOTH LOOPING within the code. 
 # Bonus =)
 
 ***
@@ -151,6 +215,8 @@ repeat {
 What's the difference between `break` and `continue`?  Give an example that demonstrates their differences.
 
 ***
+break stops the loop and gets out of the scope entirely and continue will just move on to the next case. 
+
 ## Question 2
 
 Without using Xcode, what will the loop below print? Select all that apply.
@@ -164,16 +230,16 @@ for i in 1...10 {
 }
 ```
 
-[]1
-[]2
-[]3
-[]4
-[]5
-[]6
-[]7
-[]8
-[]9
-[]10
+[]1 yes
+[]2 yes 
+[]3 yes
+[]4 no
+[]5 no 
+[]6 no
+[]7 no
+[]8 yes
+[]9 yes
+[]10 yes
 
 ***
 ## Question 3
@@ -188,17 +254,17 @@ for i in 1...10 {
     print(i)
 }
 ```
-
-[]1
-[]2
-[]3
-[]4
-[]5
-[]6
-[]7
-[]8
-[]9
-[]10
+the same as question 2 above
+[]1 yes
+[]2yes
+[]3yes
+[]4no
+[]5no
+[]6no
+[]7no
+[]8yes
+[]9yes
+[]10yes
 
 ***
 ## Question 4
