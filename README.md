@@ -14,30 +14,60 @@
 
 Write code that prints all the numbers from 1 to 150, **inclusive.**
 
+//  Answer:
+for num in 1...100  {
+    print(num)
+}
+
 ***
 ## Question 2
 
 Write code that prints all the numbers from 142 to 159, **exclusive.**
+
+//  Answer:
+for num in 142..<159    {
+    print(num)
+}
 
 ***
 ## Question 3
 
 Write code that prints only the even numbers from 15 to 80, **inclusive.**
 
+//  Answer:
+for num in 15...80 where num % 2 == 0   {
+    print(num)
+}
+
 ***
 ## Question 4
 
 Write code that prints only the odd numbers from 19 to 51, **inclusive.**
+
+//  Answer:
+for num in 19...51 where num % 2 == 1   {
+    print(num)
+}
 
 ***
 ## Question 5
 
 Write code that prints all the numbers that end in a **5** from 1 to 100, **exclusive.**
 
+//  Answer:
+for number in 1..<100 where number % 10 == 5  {
+    print("\(number) number ends in 5")
+}
+
 ***
 ## Question 6
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
+
+//  Answer:
+for number in 1...40 where number % 10 == 7  {
+    print("\(number) number ends in 7")
+}
 
 ***
 ## Question 7
@@ -46,12 +76,22 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that are divisible by 3`
 
+//  Answer:
+for num in 20...150 where num % 3 == 0  {
+    print(num)
+}
+
 ***
 ## Question 8
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 2 and 3`
+
+//  Answer:
+for num in 20...150 where num % 2 == 0 && num % 3 == 0  {
+    print(num)
+}
 
 ***
 ## Question 9
@@ -60,12 +100,24 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that end with a 4`
 
+//  Answer:
+for number in 20...150 where number % 10 == 4  {
+    print("\(number) number ends in 4")
+}
+
 ***
 ## Question 10
 
 Given a range of numbers from 20 to 150, print out all the numbers that follows these conditions:
 
 `Print out numbers: 31, 35, 40 to 60.`
+
+// Answer:
+for number in 20...150  {
+    if number == 31 || number == 35 || number == 40 || number == 60  {
+        print(number)
+    }
+}
 
 ***
 ## Question 11
@@ -79,7 +131,9 @@ while (i > 3) {
     i += 1
 }
 
-// Your explanation here
+// Answer:
+Infinitely, because i starts at 5 which makes the while condition true and always stays greater, doesn't decrement to be equal to or less than 3.
+
 ```
 
 ***
@@ -93,6 +147,14 @@ var i = 5
 while (i > 3) {
     i += 1
 }
+
+// Answer:
+var i = 5
+
+while (i < 9) {
+    i += 1
+}
+
 ```
 
 ***
@@ -106,6 +168,14 @@ var i = 5
 while (i > 3) {
     i += 1
 }
+
+//  Answser:
+var i = 5
+
+while (i < 1005) {
+    i += 1
+}
+
 ```
 
 ***
@@ -119,6 +189,20 @@ var i = 5
 while (i > 3) {
     i += 1
 }
+
+//  Answser:
+var i = 5
+
+while (i < 1005) {
+    if i % 2 == 0   {
+        print(i)
+    }
+    i += 1
+}
+
+//  Answers:
+
+
 ```
 
 ***
@@ -141,6 +225,10 @@ repeat {
     print("i = \(i)")
     i += 1
 } while i <= 10
+
+//  Answer:
+While will check condition first and run if it's true, repeat will run the code first and check if condition is true at the end. Written as is both will print to 10 and stop the loop at 11.
+
 ```
 
 # Bonus =)
